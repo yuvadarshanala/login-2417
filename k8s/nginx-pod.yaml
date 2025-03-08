@@ -1,0 +1,10 @@
+apivesion: v1
+kind: pod
+metadata:
+  name: nginx-pod
+spec:
+  containers:
+  - name:    
+    image:
+    ports:
+    - containerPort: 80
