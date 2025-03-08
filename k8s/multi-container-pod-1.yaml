@@ -1,0 +1,16 @@
+#yaml for multi container POD 
+apivesion: v1
+kind: pod
+metadata:
+  name: multi-pod-1
+spec:
+  containers:
+  - name: nginx1
+    image: nginx
+    ports:
+    - containerPort: 80
+
+  - name: node-api
+    image: yuva3darshanala/nodejs-api
+    ports:
+    - containerPort: 8080
